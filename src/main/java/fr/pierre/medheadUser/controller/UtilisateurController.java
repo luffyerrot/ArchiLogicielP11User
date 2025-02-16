@@ -34,9 +34,4 @@ public class UtilisateurController {
                 .build();
         return ResponseEntity.ok(informationConnexion);
     }
-
-    @GetMapping("/auth/logout")
-    public ResponseEntity<Void> deconnexion() {
-        return ResponseEntity.ok().build();
-    }
 }
