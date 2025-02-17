@@ -1,20 +1,10 @@
 spring:
   application:
     name: medheadUser
-
-  datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
-    username: postgres
-    password: postgres123
-
   jpa:
     database: POSTGRESQL
     hibernate:
       ddl-auto: validate
-
-server:
-  port : 8081
-
 security:
   jwt:
     secret-key: b7c01262a701ced188117ae6fdb5082b6be223b73ca24c74d4d4c1bc6966fdb0

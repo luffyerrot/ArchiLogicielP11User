@@ -1,0 +1,18 @@
+services:
+    medhead_api_user:
+        image: pierre9820/medhead-api-user:latest
+        container_name: medhead-api-user
+        restart: always
+        environment:
+            - DATABASE_HOST=192.168.1.165
+            - DATABASE_PORT=5432
+            - DATABASE_DB=medhead
+            - DATABASE_USERNAME=medhead
+            - DATABASE_PASSWORD=medhead123
+        ports:
+            - '8081:8080'
+        volumes:
+            - medhead_api_user:/var/lib/medhead/data
+volumes:
+    medhead_api_user:
+        driver: local

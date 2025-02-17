@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/medhead
+    username: medhead
+    password: medhead123
+server:
+  port : 8081

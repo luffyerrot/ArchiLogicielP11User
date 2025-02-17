@@ -35,7 +35,8 @@ public class DefaultConnexionService implements ConnexionService {
                 )
         );
 
-        return utilisateurRepository.findByMail(input.getMail())
+        return utilisateurRepository
+                .findByMail(input.getMail())
                 .orElseThrow();
     }
 }
